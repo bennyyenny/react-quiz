@@ -67,7 +67,7 @@ export default function QuizPage() {
             {questionSet}
             {!showResults && <button className="quiz--button" onClick={() => setShowResults(true)}>Check Answers</button>}
             <div className="results--quiz">
-                {showScore && <h3 className="quiz--score">You scored {score.current}/10 answers correct</h3>}
+                {showScore && <h3 className="quiz--score">You scored {score.current / 2}/10 answers correct</h3>}
                 {showResults && <button className="again--button" onClick={() => fetchData()}>Play Again</button>}  
             </div>
 
